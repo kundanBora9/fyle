@@ -1,0 +1,94 @@
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 57%;
+    height: 100%;
+    object-fit: cover;
+  }
+.carder {
+    width: 383px;
+     height: 257px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .carder:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .card-back{
+    background-color:#F44356;
+    color: #fff;}
+  
+  .card-front
+  {
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    transform: rotateY(0deg);
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-items: center;
+  }
+  .card-back 
+  {
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    transform: rotateY(180deg);
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-items: center;
+  }
+  .card-back h3
+  {
+
+  }
+  .card-back button
+  {
+      padding: 1em 3em;
+      border: none;
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    text-align: left;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    margin-top:50px;
+  }
+
+
