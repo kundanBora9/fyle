@@ -22,16 +22,16 @@ contactUsButtons.forEach((button) => {
       })
   })()
 
-    // Select all project-container elements
+   
     const projectContainers = document.querySelectorAll('.project-container');
 
-    // Add an event listener to each project-container
+    
     projectContainers.forEach((projectContainer) => {
       projectContainer.addEventListener('click', () => {
-        // Get the image URL from the data-image attribute
+        
         const imageUrl = projectContainer.getAttribute('data-image');
   
-        // Update the src attribute of the img element
+        
         document.getElementById('project-image').src = imageUrl;
       });
     });
