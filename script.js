@@ -1,5 +1,6 @@
-const contactUsButtons = document.querySelectorAll('button.btn.btn-danger.text-uppercase');
 
+// onclick  model open
+const contactUsButtons = document.querySelectorAll('button.btn.btn-danger.text-uppercase');
 contactUsButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const contactUsModal = new bootstrap.Modal(document.getElementById('contactUsModal'));
@@ -7,6 +8,7 @@ contactUsButtons.forEach((button) => {
   });
 });
 
+// form validation
 (function () {
     'use strict'
     var forms = document.querySelectorAll('.needs-validation')
@@ -22,6 +24,7 @@ contactUsButtons.forEach((button) => {
       })
   })()
 
+  // changeing images on click
    
     const projectContainers = document.querySelectorAll('.project-container');
 
@@ -36,6 +39,7 @@ contactUsButtons.forEach((button) => {
       });
     });
 
+// carousel
 
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
